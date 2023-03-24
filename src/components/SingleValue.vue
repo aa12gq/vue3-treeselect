@@ -22,8 +22,7 @@
 
       return renderValueContainer([
         shouldShowValue && (
-          <div class="vue-treeselect__single-value">
-            { this.renderSingleValueLabel() }
+          <div class="vue-treeselect__single-value" innerHTML={ this.renderSingleValueLabel() }>
           </div>
         ),
         <Placeholder />,

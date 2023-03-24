@@ -174,12 +174,12 @@
           labelClassName,
           countClassName,
         })
+        let labelHtml = node.label;
+        if(shouldShowCount){
+          labelHtml += `<span class="${countClassName}">(${count})</span>`
+        }
         return (
-          <label class={labelClassName}>
-            {node.label}
-            {shouldShowCount && (
-              <span class={countClassName}>({count})</span>
-            )}
+          <label class={labelClassName} innerHTML={labelHtml}>
           </label>
         )
       },

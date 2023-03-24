@@ -43,7 +43,6 @@ export default {
       }
     },
     'instance.forest'(newValue) {
-      console.log('instance forest', newValue);
     }
   },
 

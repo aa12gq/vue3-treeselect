@@ -1286,7 +1286,6 @@ export default {
         this.initialize()
         this.resetHighlightedOptionWhenNecessary(true)
       }
-      console.log(searchQuery, this.minChar);
       if (((searchQuery === "" && this.minChar > 0) || this.cacheOptions) && entry.isLoaded) {
         return done()
       }
@@ -1476,7 +1475,6 @@ export default {
       this.$nextTick(this.resetHighlightedOptionWhenNecessary)
       this.$nextTick(this.restoreMenuScrollPosition)
       if (!this.options && !this.async) this.loadRootOptions()
-      console.log(this.minChar);
       if (this.minChar == 0 && this.async) this.handleRemoteSearch();
       this.toggleClickOutsideEvent(true)
       this.$emit('open', this.getInstanceId())
