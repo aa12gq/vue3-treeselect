@@ -1,7 +1,7 @@
 {
   "name": "@veigit/vue3-treeselect",
   "type": "module",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Tree select hierarchical component for vue 3 (next)",
   "author": "veigit",
   "main": "dist/vue3-treeselect.js",

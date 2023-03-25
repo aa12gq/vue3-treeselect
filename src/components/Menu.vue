@@ -20,7 +20,7 @@ export default {
       const { instance } = this
 
       return {
-        maxHeight: instance.maxHeight + 'px',
+        maxHeight: instance.maxHeight,
       }
     },
 
